@@ -55,5 +55,13 @@ display_message "Update system ... " "$Yellow"
 
 apt update -y
 check_command_status
+apt upgrade -y
+check_command_status
 
-display_message "Update done !" "$Green"
+display_message "Update & upgrade done !" "$Green"
+
+display_message "Install git & curl ..." "$Yellow"
+
+apt install -y git curl
+check_command_status
+display_message "Install git & curl done !" "$Green"
