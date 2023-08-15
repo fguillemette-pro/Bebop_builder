@@ -20,4 +20,4 @@ echo -e 'Bebop Builder init'
 echo -e '##################'
 
 check_root
-echo "OK ROOT"
+apt update -y
